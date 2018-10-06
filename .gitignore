@@ -1,0 +1,10 @@
+*.xml
+.idea/*
+.idea/
+../.idea/*
+../.idea/
+node_modules/
+Gruntfile.js
+package.json
+package-lock.json
+test/
