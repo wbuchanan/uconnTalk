@@ -31,14 +31,14 @@
 <div class="reveal">
 	<div class="slides">
 		<section>
-			<h2>Data Science in Education:</h2>
-			<h3>The Knowledge, Skills, and Abilities You Need to Succeed and Accelerate Your Career</h3><br>
+			<h2>Data Science in Education</h2>
 			<p>
 				<a href="https://github.com/wbuchanan">Billy Buchanan</a> <br>
 				<a href="https://www.fcps.net">Fayette County Public Schools (Lexington, KY)</a><br>
 				<a href="https://www.fcps.net/Domain/2284">Director of Grants, Research, Accountability, &amp; Data</a><br>
+				<a href="https://kyfcps.atlassian.net/servicedesk/customer/portals">Data/Research Requests</a>
 			</p>
-			<p>Slides available at <a href="https://wbuchanan.github.io/uconnTalk">Make a bit.ly URL reference</a></p>
+			<p>Slides available at <a href="https://wbuchanan.github.io/uconnTalk">https://bit.ly/2RvsYrA</a></p>
 			<aside class="notes">
 				<ul>
 					<li>Remind everyone to ask questions as they come to mind, and to definitely type them in to the WebEx</li>
@@ -72,7 +72,7 @@
 
 
 			<section>
-				<h3>Since leaving the US Army:</h3>
+				<h3>Education/Work</h3>
 				<ul>
 					<li>Berklee College of Music</li>
 					<li>US Army</li>
@@ -101,26 +101,30 @@
 						<li>Mississippi Department of Education - August 2013 - June 2015</li>
 						<li>Minneapolis Public Schools - July 2015 - June 2016</li>
 						<li>Fayette County Public Schools - July 2016 - Present</li>
+						<li>Programming/coding as part of methodology/analysis</li>
+						<li>Optimizing process at BERC</li>
+						<li>Learning Python to do webscraping for contract because state wouldn't provide data</li>
+						<li>Accountability system in Mississippi and reference to Stata Conference</li>
+						<li>Continuing to contribute to community in Minneapolis (hint here about talking about eda in a bit)</li>
+						<li>Transition to new job and lack of time for coding/analytics</li>
 					</ul>
 				</aside>
 			</section>
 
 
 			<section>
+				<h3>Best advise for data science in the K-12 field?</h3>
 				<ul>
-					<li>Programming/coding as part of methodology/analysis</li>
-					<li>Optimizing process at BERC</li>
-					<li>Learning Python to do webscraping for contract because state wouldn't provide data</li>
-					<li>Accountability system in Mississippi and reference to Stata Conference</li>
-					<li>Continuing to contribute to community in Minneapolis (hint here about talking about eda in a bit)</li>
-					<li>Transition to new job and lack of time for coding/analytics</li>
+					<li>Apply to become a Data Fellow at <a href="https://sdp.cepr.harvard.edu/" target="_blank">the Strategic Data Project</a>.</li>
+					<li>If you don't make it the first time, apply again.</li>
+					<li>Look for other opportunities that grow your personal/professional network beyond academia.</li>
 				</ul>
 			</section>
 		</section>
 
 		<!-- What do hiring managers know/think they need and don't know they need yet. -->
 		<section>
-			<h2>Data Science Jobs in the K-12 Space</h2>
+			<h3>Data Science Jobs in the K-12 Space</h3>
 			<section data-autoslide="2500">
 				<h3>What skills do you actually need?</h3>
 			</section>
@@ -143,7 +147,7 @@
 				<h3>How many students are enrolled?</h3>
 			</section>
 			<section>
-				<ul>
+				<ul style="font-size: 26pt">
 					<li>In what time frame are you considering enrollments.</li>
 					<li>How are dually enrolled students handled?</li>
 					<li>Are students who have never appeared considered enrolled?</li>
@@ -241,12 +245,13 @@
 				<pre>
 					<code  data-trim data-noescape>
 
-						// First load some data
-						sysuse auto.dta, clear
+// First load some data
+sysuse auto.dta, clear
 
-						// I am going to assume that you can call pdflatex from your command line
-						// If that is correct, then the line below is all you need.
-						eda, r(`"`c(pwd)'/edaexamples"') o("minexample") comp
+// I am going to assume that you can call pdflatex from your
+// command line.  If that is correct, then the line below is
+// all you need.
+eda, r(`"`c(pwd)'/edaexamples"') o("minexample") comp
 
 					</code>
 				</pre>
@@ -272,7 +277,7 @@ net inst eda, from(http://wbuchanan.github.io/eda)
 		</section>
 
 		<section>
-			<h2>What is <a href="http://github.com/wbuchanan/eda"><code>eda</code></a>?</h2>
+			<h3>What is <a href="http://github.com/wbuchanan/eda"><code>eda</code></a>?</h3>
 
 			<!-- The Syntax -->
 			<section data-autoslide="7500">
@@ -303,7 +308,7 @@ net inst eda, from(http://wbuchanan.github.io/eda)
 
 			<!-- Under the hood -->
 			<section>
-				<h3>What does <a href="http://github.com/wbuchanan/eda"><code>eda</code></a> do?</h3>
+				<br><h3>What does <a href="http://github.com/wbuchanan/eda"><code>eda</code></a> do?</h3>
 				<ul>
 					<li>Checks for and optionally installs dependencies.</li>
 					<li>Classifies variables as categorical or continuous.</li>
